@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +19,8 @@ public class Main {
         System.out.println(LoopForEach.ForE());
 
         System.out.println(Mainly.Evenly());
+
+        newMain.NewMainly();
 
     };
 
@@ -178,6 +182,19 @@ public class Main {
             };
 
             return number;
+        }
+    };
+
+    class newMain {
+        public static String NewMainly() {
+            ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+            numbers.add(10);
+            numbers.add(20);
+
+            numbers.forEach(n -> {
+                System.out.println(n);
+            })
         }
     }
 };
