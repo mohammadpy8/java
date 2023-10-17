@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class method {
 
     static void MyMethod() {
@@ -7,7 +9,19 @@ public class method {
     static void sum(int a, int b) {
         int sumation = a + b;
         System.out.println(sumation);
+
     };
+
+    static void did() {
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+        numbers.add(5);
+        numbers.add(9);
+        numbers.add(8);
+        numbers.add(1);
+
+        numbers.forEach( (n) -> { System.out.println(n); } );
+    }
 
     static int mines(int number) {
         return number - 10;
@@ -66,6 +80,7 @@ public class method {
         conditional("mohammad", "seyf");
 
         System.out.println(sumation(10));
+        did();
 
     }
 }

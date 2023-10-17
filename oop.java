@@ -6,11 +6,11 @@ public class oop {
 
         public static void main(String[] args) {
 
-            Main Obj1 = new Main();
-            Main Obj2 = new Main();
+            oop Obj1 = new oop();
+            oop Obj2 = new oop();
 
-            System.out.println(Obj1);
-            System.out.println(Obj2);
+            System.out.println(Obj1.x);
+            System.out.println(Obj2.x);
         }
     }
 }
