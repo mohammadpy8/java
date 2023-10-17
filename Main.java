@@ -11,6 +11,9 @@ public class Main {
         System.out.println(MathNumber.mathn());
 
         System.out.println(conditional.ConditionalRender());
+        System.out.println(SwithCase.Switch());
+
+        System.out.println(Loop.Looping());
 
     };
 
@@ -106,13 +109,40 @@ public class Main {
             int a = 10;
             double b = 1.5;
 
-            if(a > b) {
+            if (a > b) {
                 return a;
-            } else if (a == b){
-                return ((int)(b));
+            } else if (a == b) {
+                return ((int) (b));
             } else {
-                return  (int)(a + b);
+                return (int) (a + b);
             }
+        }
+    };
+
+    class SwithCase {
+        static int Switch() {
+
+            int number = 10;
+
+            switch (number) {
+                case 5:
+                    return 5;
+            }
+
+            return 10;
+        }
+    };
+
+    class Loop {
+        static int Looping() {
+            for (int i = 1 ; i<5; i++) {
+                System.out.println("Outer: " + i);
+
+                for (int j = 0; j < 10; j++) {
+                    System.out.println(" Inner: " + j);
+                }
+            };
+            return 10;
         }
     }
 };
