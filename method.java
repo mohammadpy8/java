@@ -20,6 +20,8 @@ public class method {
         numbers.add(8);
         numbers.add(1);
 
+        System.out.println(numbers);
+
         numbers.forEach( (n) -> { System.out.println(n); } );
     }
 
