@@ -18,13 +18,13 @@ public class method {
         int a = 5;
         int b = 10;
 
-        if(a > b) {
+        if (a > b) {
             String LowerName = name.toLowerCase();
             String LowerLastName = lastName.toLowerCase();
             String mergName = LowerName.concat(LowerLastName);
 
             System.out.println(mergName);
-        } else if(b > a) {
+        } else if (b > a) {
             String UpperName = name.toUpperCase();
             String UpperLastName = lastName.toUpperCase();
 
@@ -34,7 +34,16 @@ public class method {
         } else {
             System.out.println("");
         }
-    }
+    };
+
+    public static int sumation(int number) {
+
+        if (number > 0) {
+            return number + sumation(number - 1);
+        } else {
+            return 0;
+        }
+    };
 
     public static void main(String[] args) {
         MyMethod();
@@ -47,11 +56,16 @@ public class method {
         sum(10, 40);
         sum(0, 20);
 
-        System.out.println(mines(15));;
-        System.out.println(mines(5));;
-        System.out.println(mines(6));;
+        System.out.println(mines(15));
+        ;
+        System.out.println(mines(5));
+        ;
+        System.out.println(mines(6));
+        ;
 
         conditional("mohammad", "seyf");
+
+        System.out.println(sumation(10));
 
     }
 }
