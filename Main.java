@@ -14,6 +14,9 @@ public class Main {
         System.out.println(SwithCase.Switch());
 
         System.out.println(Loop.Looping());
+        System.out.println(LoopForEach.ForE());
+
+        System.out.println(Mainly.Evenly());
 
     };
 
@@ -143,6 +146,38 @@ public class Main {
                 }
             };
             return 10;
+        }
+    };
+
+    class LoopForEach{
+
+        static String[] ForE() {
+
+            String[] cars = {"BMW", "Benz", "Ferari", "Lomborgini"};
+
+            for (String i : cars) {
+                System.out.println(i);
+                for(int j = 0; j < cars.length ; j++) {
+                    System.out.println(j);
+                }
+            }
+            return cars;
+        }
+    };
+
+    class Mainly {
+
+        static int[][] Evenly() {
+
+            int[][] number = {{1, 3, 5}, {2, 4, 6}};
+
+            for (int i = 0; i < number.length; i++) {
+                for (int j = 0; j < number[i].length; j++) {
+                    System.out.println(number[i][j]);
+                }
+            };
+
+            return number;
         }
     }
 };
