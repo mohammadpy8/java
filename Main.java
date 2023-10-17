@@ -10,6 +10,8 @@ public class Main {
         System.out.println(FindNumberIndex.Finded());
         System.out.println(MathNumber.mathn());
 
+        System.out.println(conditional.ConditionalRender());
+
     };
 
     class Messages {
@@ -94,6 +96,23 @@ public class Main {
             int sumAnArrayFinall = anArray[5] + anArray[6] + anArray[7] + anArray[8] + anArray[9];
 
             System.out.println(sumAnArrayFinall + sumAnArrayHalf);
+        }
+    };
+
+    class conditional {
+
+        static int ConditionalRender() {
+
+            int a = 10;
+            double b = 1.5;
+
+            if(a > b) {
+                return a;
+            } else if (a == b){
+                return ((int)(b));
+            } else {
+                return  (int)(a + b);
+            }
         }
     }
 };
