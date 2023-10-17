@@ -13,6 +13,29 @@ public class method {
         return number - 10;
     }
 
+    static void conditional(String name, String lastName) {
+
+        int a = 5;
+        int b = 10;
+
+        if(a > b) {
+            String LowerName = name.toLowerCase();
+            String LowerLastName = lastName.toLowerCase();
+            String mergName = LowerName.concat(LowerLastName);
+
+            System.out.println(mergName);
+        } else if(b > a) {
+            String UpperName = name.toUpperCase();
+            String UpperLastName = lastName.toUpperCase();
+
+            String mergLast = UpperName.concat(UpperLastName);
+
+            System.out.println(mergLast);
+        } else {
+            System.out.println("");
+        }
+    }
+
     public static void main(String[] args) {
         MyMethod();
         MyMethod();
@@ -27,6 +50,8 @@ public class method {
         System.out.println(mines(15));;
         System.out.println(mines(5));;
         System.out.println(mines(6));;
+
+        conditional("mohammad", "seyf");
 
     }
 }
